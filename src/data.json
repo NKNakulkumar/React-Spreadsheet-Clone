@@ -1,0 +1,61 @@
+[
+    {
+      "#":"1",
+      "Job Request": "Launch social media campaign for produ...",
+      "Submitted": "15-11-2024",
+      "Status": "In-progress",
+      "Submitter": "Aisha Patel",
+      "URL": "www.aishapatel...",
+      "Assigned": "Sophie Choudhury",
+      "Priority": "Medium",
+      "Due Date": "20-11-2024",
+      "Est. Value": "6,200,000 ₹"
+    },
+    {
+      "#":"2",
+      "Job Request": "Update press kit for company redesign",
+      "Submitted": "28-10-2024",
+      "Status": "Need to start",
+      "Submitter": "Irfan Khan",
+      "URL": "www.irfankhanport...",
+      "Assigned": "Tejas Pandey",
+      "Priority": "High",
+      "Due Date": "30-10-2024",
+      "Est. Value": "3,500,000 ₹" 
+    },
+    {
+        "#":"3",
+        "Job Request": "Finalize user testing feedback for app...",
+        "Submitted": "05-12-2024",
+        "Status": "In-progress",
+        "Submitter": "Mark Johnson",
+        "URL": "www.markjohnson...",
+        "Assigned": "Rachel Lee",
+        "Priority": "Medium",
+        "Due Date": "10-12-2024",
+        "Est. Value": "4,750,000 ₹" 
+      }, {
+        "#":"4",
+        "Job Request": "Design new features for the website",
+        "Submitted": "10-01-2025",
+        "Status": "Complete",
+        "Submitter": "Emily Green",
+        "URL": "www.emilygreenart...",
+        "Assigned": "Tom Wright",
+        "Priority": "Low",
+        "Due Date": "15-01-2025",
+        "Est. Value": "5,900,000 ₹" 
+      }, {
+        "#":"5",
+        "Job Request": "Prepare financial report for Q4",
+        "Submitted": "25-01-2025",
+        "Status": "Blocked",
+        "Submitter": "Jessica Brown",
+        "URL": "www.jessicabrown...",
+        "Assigned": "Kevin Smith",
+        "Priority": "Low",
+        "Due Date": "30-01-2025",
+        "Est. Value": "2,800,000 ₹" 
+      }
+  ]
+  
