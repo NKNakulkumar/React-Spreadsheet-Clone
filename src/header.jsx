@@ -2,30 +2,53 @@ import React from 'react'
 
 const Header = () => {
   return (
-    <div className='main bg-gray-100'>
-    <div className="box1 flex flex-row bg-gray-100 pt-1.5 items-center shadow-md gap-3">
-      <div className='ml-5' >
-      <img src="https://c.animaapp.com/mclmkdkf288FZk/img/panel.svg" alt="img" width="27px" height="27px" />
+    <div className="main bg-gray-100 w-full">
+    <div className="box1 w-full flex flex-row bg-gray-100 pt-1.5 items-center shadow-md gap-3">
+      
+      {/* Left icon */}
+      <div className="ml-5">
+        <img
+          src="https://c.animaapp.com/mclmkdkf288FZk/img/panel.svg"
+          alt="img"
+          width="27"
+          height="27"
+        />
       </div>
-      <div className=" flex flex-row justify-center">
-        <ul className='flex flex-row gap-4 justify-center items-center'>
-          <li className='flex flex-row justify-center items-center gap-1.5'>WorkSpace
-            <img src="https://c.animaapp.com/mclmkdkf288FZk/img/chevron-1.svg" alt="" className='gap-1' />
+  
+      {/* Center navigation */}
+      <div className="flex flex-1 justify-center">
+        <ul className="flex flex-row gap-4 items-center">
+          
+          <li className="flex flex-row items-center gap-1.5 whitespace-nowrap">
+            WorkSpace
+            <img
+              src="https://c.animaapp.com/mclmkdkf288FZk/img/chevron-1.svg"
+              alt=""
+            />
           </li>
-          <li className='flex flex-row justify-center items-center gap-1.5'>Folder 2
-          <img src="https://c.animaapp.com/mclmkdkf288FZk/img/chevron-1.svg" alt=""  />
-
+  
+          <li className="flex flex-row items-center gap-1.5 whitespace-nowrap">
+            Folder 2
+            <img
+              src="https://c.animaapp.com/mclmkdkf288FZk/img/chevron-1.svg"
+              alt=""
+            />
           </li>
-          <li className='flex flex-row justify-center items-center '>SpreadSheet 3
+  
+          <li className="flex flex-row items-center gap-1.5 whitespace-nowrap">
+            SpreadSheet 3
+            <img
+              src="https://c.animaapp.com/mclmkdkf288FZk/img/more.svg"
+              alt=""
+              className="w-6 h-6"
+            />
           </li>
-    <img
-    src="https://c.animaapp.com/mclmkdkf288FZk/img/more.svg"
-    alt=""
-    className="w-6 h-6  "
-  />
-
+  
         </ul>
       </div>
+  
+
+
       <div className="boxright flex flex-row justify-evenly ml-[500px] items-center gap-2 pt-1 text-sm">
       <div className="p-4">
   <div className="relative w-full max-w-md bg-gray-100">
@@ -92,53 +115,57 @@ const Header = () => {
       </div>
          </div>
 
-         {/* <div className='w-full h-px ' /> */}
-         <div className="box3 flex flex-row items-center px-4 shadow-md ">
-          <div className="flex flex-row items-center ml-7 pr-[530px] pl-4 py-1 bg-gray-200">
-            <div className='flex flex-row items-center gap-1 p-1 bg-gray-200 rounded-sm shadow-sm'> <img src="https://c.animaapp.com/mclmkdkf288FZk/img/link.svg" alt="" />Q3 Financial Overview</div>
-            <div className="ml-1">
-              <img src="https://c.animaapp.com/mclmkdkf288FZk/img/arrow-sync.svg" alt="" />
-            </div>
-          </div>
-
-<div className="flex items-center  ml-auto space-x-0.5">
-  {/* 1. ABC */}
-  <div className="flex items-center pr-12 pl-6 py-2 bg-[#d2e3d7] shadow-sm ">
-    <img src="https://c.animaapp.com/mclmkdkf288FZk/img/arrow-split.svg" className="w-4 h-4 mr-1" alt="icon" />
-    <span className="text-gray-800 font-medium text-sm flex items-center">
-      ABC
-      <img src="https://c.animaapp.com/mclmkdkf288FZk/img/more.svg" className="w-4 h-4 ml-1" alt="more" />
-    </span>
-  </div>
-
-  {/* 2. Answer a question */}
-  <div className="flex items-center pl-7 pr-2 py-2 bg-[#dccffc] shadow-sm ">
-    <img src="https://c.animaapp.com/mclmkdkf288FZk/img/arrow-split.svg" className="w-4 h-4 mr-1" alt="icon" />
-    <span className="text-gray-800 font-medium text-sm flex items-center">
-      Answer a question
-      <img src="https://c.animaapp.com/mclmkdkf288FZk/img/more.svg" className="w-4 h-4 ml-1" alt="more" />
-    </span>
-  </div>
-
-  {/* 3. Extract */}
-  <div className="flex items-center pl-3 pr-2 py-2 bg-[#fae5d2] shadow-sm ">
-    <img src="https://c.animaapp.com/mclmkdkf288FZk/img/arrow-split.svg" className="w-4 h-4 mr-1" alt="icon" />
-    <span className="text-gray-800 font-medium text-sm flex items-center">
-      Extract
-      <img src="https://c.animaapp.com/mclmkdkf288FZk/img/more.svg" className="w-4 h-4 ml-1" alt="more" />
-    </span>
-  </div>
-
-  {/* 4. Add New (+) */}
-  <div className="w-8 h-8 flex items-center -mr-2 justify-center bg-[#eeeeee] shadow-sm ">
-    <img src="https://c.animaapp.com/mclmkdkf288FZk/img/add.svg" className="w-4 h-4" alt="plus" />
-  </div>
-</div>
-
-
-</div>
+    <div className="flex items-center pl-3 ml-6 bg-gray-200 shadow-md">
+  {/* Left section with label and refresh icon */}
+  <div className="flex items-center space-x-2 bg-gray-200  py-1  rounded shadow-sm">
+    <div className="flex items-center space-x-1">
+      <img src="https://c.animaapp.com/mclmkdkf288FZk/img/link.svg" alt="link icon" />
+      <span className="text-sm font-medium text-gray-800">Q3 Financial Overview</span>
     </div>
+    <img src="https://c.animaapp.com/mclmkdkf288FZk/img/arrow-sync.svg" alt="refresh icon" />
+  </div>
+
+  {/* Right section with actions */}
+  <div className="flex items-center ml-auto ">
+    {/* ABC */}
+    <div className="flex items-center pl-7 pr-5.5 py-2  bg-[#d2e3d7] shadow-sm ">
+      <img src="https://c.animaapp.com/mclmkdkf288FZk/img/arrow-split.svg" className="w-4 h-4 mr-1" alt="icon" />
+      <span className="text-gray-800 font-medium text-sm flex items-center">
+        ABC
+        <img src="https://c.animaapp.com/mclmkdkf288FZk/img/more.svg" className="w-4 h-4 ml-1" alt="more" />
+      </span>
+    </div>
+
+    {/* Answer a question */}
+    <div className="flex items-center pl-6.5  pr-6 py-2 bg-[#dccffc] shadow-sm ">
+      <img src="https://c.animaapp.com/mclmkdkf288FZk/img/arrow-split.svg" className="w-4 h-4 mr-1" alt="icon" />
+      <span className="text-gray-800 font-medium text-sm flex items-center">
+        Answer a question
+        <img src="https://c.animaapp.com/mclmkdkf288FZk/img/more.svg" className="w-4 h-4 ml-1" alt="more" />
+      </span>
+    </div>
+
+    {/* Extract */}
+    <div className="flex items-center pl-2 pr-4 py-2 bg-[#fae5d2] shadow-sm ">
+      <img src="https://c.animaapp.com/mclmkdkf288FZk/img/arrow-split.svg" className="w-4 h-4 mr-1" alt="icon" />
+      <span className="text-gray-800 font-medium  text-sm flex items-center">
+        Extract
+        <img src="https://c.animaapp.com/mclmkdkf288FZk/img/more.svg" className="w-4 h-4 ml-1" alt="more" />
+      </span>
+    </div>
+
+    {/* Add New (+) */}
+    <div className="w-18 h-9 flex items-center  justify-center bg-[#eeeeee] shadow-sm  text-black  relative hover:border-2 hover:border-[#7fc77f] hover:bg-[#e8f0ea] hover: ease-in transition-all duration-200 cursor-pointer ">
+      <img src="https://c.animaapp.com/mclmkdkf288FZk/img/add.svg" className="w-4 h-4" alt="plus" />
+    </div>
+  </div>
+</div>
+
+</div>
   )
 }
 
 export default Header
+
+
+

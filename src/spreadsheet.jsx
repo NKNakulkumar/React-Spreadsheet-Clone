@@ -9,7 +9,7 @@ const initialColumns = [
 const mapJsonToRows = (data) => {
   const mappedData = data.slice(0, 11).map(obj => initialColumns.slice(0, 11).map(col => obj[col] || ""));
   // Pad with empty rows if less than 10
-  while (mappedData.length < 25) {
+  while (mappedData.length < 20) {
     mappedData.push(Array(initialColumns.length).fill(""));
   }
   return mappedData;
@@ -23,13 +23,13 @@ const AirtableLikeSheet = () => {
   useEffect(() => {
       
     const colWidths = columns.map((col, colIndex) => {  // Calculate width for header and padding
-      let headerWidth = (col.length * 7.5) + 32; // Adjusted: 7.5px per char + px-4 (32px) for header
+      let headerWidth = (col.length * 5.5) + 32; // Adjusted: 5.5px per char + px-4 (32px) for header
 
-      let maxWidthForColumn = Math.max(50, headerWidth); // Ensure a base minimum width of 50px
+      let maxWidthForColumn = Math.max(30, headerWidth); // Ensure a base minimum width of 30px
 
       for (let row of data) {
         const content = row[colIndex] || '';
-        const dataCellWidth = (content.toString().length * 7.5) + 24; // Adjusted: 7.5px per char + px-3 (24px) for data cells
+        const dataCellWidth = (content.toString().length * 4.5) + 24; // Adjusted: 5.5px per char + px-3 (24px) for data cells
         maxWidthForColumn = Math.max(maxWidthForColumn, dataCellWidth);
       }
       return maxWidthForColumn;
@@ -58,7 +58,7 @@ const AirtableLikeSheet = () => {
   };
 
   return (
-    <div className="text-sm font-normal">
+    <div className="text-xs font-stretch-semi-condensed">
       <div className="overflow-x-auto border rounded shadow  ">
       <table className="border-collapse border-gray-400 mt-0 ">
           <thead>
@@ -80,7 +80,7 @@ const AirtableLikeSheet = () => {
                         );
                       case "Submitted":
                         return (
-                          <div className="flex items-center gap-2">
+                          <div className="flex items-center  gap-2">
                             <img src="https://c.animaapp.com/mclmkdkf288FZk/img/calendar.svg" alt="Calendar" className="w-4 h-4" />
                             Submitted <img src="https://c.animaapp.com/mclmkdkf288FZk/img/chevron.svg" alt="" className='mr-4' />
                           </div>
@@ -141,7 +141,7 @@ const AirtableLikeSheet = () => {
                           ? "underline"
                           : columns[colIndex] === "Priority"
                             ? cell === "Medium"
-                              ? "text-[#dfb83d] font-medium border-black"
+                              ? "text-[#dfb83d] font-medium  border-black"
                               : cell === "High"
                                 ? "text-[#f26243] font-medium border-black"
                                 : cell === "Low"
