@@ -7,7 +7,7 @@ A fast and modern spreadsheet application built with **React**, **JSX**, and **T
 ## 🚀 Demo
 
 <div align="center" style="background-color:#f9fafb;padding:20px;border-radius:8px">
-  <a href="https://your-demo-link.com" target="_blank">
+  <a href="https://nakul-react-spreadsheet.netlify.app/" target="_blank">
     <img src="https://img.shields.io/badge/Live%20Demo-Click%20Here-blue?style=for-the-badge&logo=react" alt="Live Demo Badge" />
   </a>
 </div>
