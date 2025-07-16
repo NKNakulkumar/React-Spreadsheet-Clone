@@ -55,6 +55,6 @@ bun run dev
 ### 1. 📥 Clone the Repository
 
 ```bash
-git clone https://github.com/NKNakulkumar/React-Spreadsheet-Intern-Assignment.git
+git clone https://github.com/NKNakulkumar/React-Spreadsheet-Clone.git
 cd React-Spreadsheet-Intern-Assignment
 bun dev
